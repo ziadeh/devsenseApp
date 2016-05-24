@@ -1,0 +1,20 @@
+<div ng-controller="HomeCtrl" class="list-group">
+  <div class="list-group-item" ng-repeat="item in folders">
+  <div class="roundedRoot" id="{{item.label}}"><a href="javascript:void(0)" ng-click="activeRoot()">{{item.label}}</a></div>
+   <ul>
+   <li ng-class="{'active': isActive}" ng-repeat="folder in item.children" class="hidden">
+        <!-- <a href="javascript:void(0);" ng-click="open(folder.label, folder.type)" folders>{{folder.label}}</a> -->
+       <folders type="{{ folder.type }}" label="{{ folder.label }}" elempath="/"></folders>
+<!--        <div ng-if="folder.type == 0">
+             </div>
+             <div ng-if="folder.type == 1">
+        <p>picture</p>
+             </div> -->
+    </li>
+    </ul>
+  <div> 
+</div>
+
+
+
+ 

@@ -1,0 +1,8 @@
+<div class="container">
+<div class="mainImage">
+<img src="{{activeImg}}" id="{{imgId}}" class="img-responsive" />
+</div>
+<div class="" >
+  <img class="imgThumbnail " ng-repeat="item in folders" src="{{item.url}}" ng-click="swapImage(item.url, item.label)" ng-if="item.url && item.label != imgId" alt="{{imgId}}" id="{{item.label}}" />
+</div>
+</div>
