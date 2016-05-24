@@ -21,17 +21,4 @@ angular.module('devsenseApp')
   $scope.activeRoot = function() {
     $scope.isActive = !$scope.isActive;
   }  
-
-    $scope.open = function(item) {
-      //console.log($scope.item);
-      // if(type == 0) {
-      //   var url = api.apiUrl('/'+label);
-      //   url.then(function(data) {
-      //     $scope.folders = data.data;
-      //   });
-      // }
-      // if(type == 1) {
-
-      // }
-    }
   });
